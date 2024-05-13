@@ -4,6 +4,7 @@
 @import url("styles/_variables.scss");
 @import url("styles/_variables.scss");
 @import url("styles/_variables.scss");
+@import url("styles/_variables.scss");
 @import url("styles/_fonts.scss");
 @import url("styles/_mixins.scss");
 html {
@@ -622,27 +623,13 @@ template {
   --transition-duration: 0.7s;
 }
 
-:root {
-  --color-light: #fff;
-  --color-blue: #272937;
-  --color-dark-blue: #343849;
-  --color-red: #F04451;
-  --color-dark: #0D0F1B;
-  --border-radius: 15px;
-  --border-white: solid 1px var(--color-light);
-  --conteiner-big: 1920px;
-  --conteiner-middle: 960px;
-  --container-small: 640px;
-  --container-very-small: 360px;
-  --transition-duration: 0.7s;
-}
-
 body, p {
-  font-family: var(--font-family);
+  font-family: "Raleway-Regular";
   font-weight: 400;
   line-height: 140%;
   font-size: 18px;
   color: var(--color-light);
+  background-color: var(--color-blue);
 }
 
 @keyframes button-pulse-animation {
