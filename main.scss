@@ -1,10 +1,10 @@
 @import 
-url('styles/_normalize.scss'), 
-url('styles/_fonts.scss'),
-url('styles/_media.scss'),
-url('styles/_mixins.scss'),
-url('styles/_utils.scss'),
-url('styles/_variables.scss'),
-url('styles/_globals.scss');
+'styles/normalize', 
+'styles/fonts', 
+'styles/media', 
+'styles/mixins', 
+'styles/utils', 
+'styles/variables',
+'styles/globals';
 
-@import url('styles/blocks/_404.scss');
+@import 'styles/blocks/404.scss'
