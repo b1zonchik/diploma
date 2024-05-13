@@ -5,6 +5,7 @@
 @import url("/styles/_variables.scss");
 @import url("/styles/_variables.scss");
 @import url("/styles/_fonts.scss");
+@import url("/styles/_mixins.scss");
 html {
   -webkit-text-size-adjust: 100%;
 }
@@ -566,28 +567,28 @@ template {
 }
 
 @font-face {
-  font-family: var(--font-family);
+  font-family: "Raleway-Bold";
   src: url(/fonts/Raleway-Bold.woff2) format("woff2");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: var(--font-family);
+  font-family: "Raleway-Regular";
   src: url(/fonts/Raleway-Regular.woff2) format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: var(--font-family);
+  font-family: "Raleway-SemiBold";
   src: url(/fonts/Raleway-SemiBold.woff2) format("woff2");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: var(--font-family);
+  font-family: "Raleway-Thin";
   src: url(/fonts/Raleway-Thin.woff2) format("woff2");
   font-weight: 100;
   font-style: normal;
@@ -618,7 +619,6 @@ template {
   --conteiner-middle: 960px;
   --container-small: 640px;
   --container-very-small: 360px;
-  --font-family: "Raleway";
   --transition-duration: 0.7s;
 }
 
@@ -634,7 +634,6 @@ template {
   --conteiner-middle: 960px;
   --container-small: 640px;
   --container-very-small: 360px;
-  --font-family: "Raleway";
   --transition-duration: 0.7s;
 }
 
@@ -646,42 +645,220 @@ body, p {
   color: var(--color-light);
 }
 
-body {
+@keyframes button-pulse-animation {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+.body-404 {
   background-color: var(--color-blue);
-  outline: 4px solid green !important;
-  display: flex;
-  flex-direction: row;
 }
 
-.header {
-  display: inline-flex;
+.header-404__circle1 {
+  width: 413px;
+  aspect-ratio: 1;
+  background-color: var(--color-red);
+  background-size: 413px 413px;
+  border-radius: 206.5px;
+  filter: blur(200px);
+  opacity: 50%;
+  position: absolute;
+  top: -23.4375vw;
+  left: -31.25vw;
+}
+
+.header-404__circle2 {
+  width: 413px;
+  aspect-ratio: 1;
+  background-color: var(--color-red);
+  background-size: 413px 413px;
+  border-radius: 206.5px;
+  filter: blur(200px);
+  opacity: 50%;
+  position: absolute;
+  left: 26.0416666667vw;
+}
+
+.header-404__circle3 {
+  width: 413px;
+  aspect-ratio: 1;
+  background-color: var(--color-red);
+  background-size: 413px 413px;
+  border-radius: 206.5px;
+  filter: blur(200px);
+  opacity: 50%;
+  position: absolute;
+  top: 23.4375vw;
+  left: 78.125vw;
+}
+
+.header-404 {
+  margin-left: 20.8333333333vw;
+  margin-top: 10.4166666667vw;
+  display: flex;
   flex-direction: column;
 }
 
-.header__text {
-  font-family: var(--font-family);
+.header-404__Vec1 {
+  position: absolute;
+  width: 3.6458333333vw;
+  height: 3.90625vw;
+  top: -2.6041666667vw;
+  left: 8.3333333333vw;
+}
+
+.header-404__Vec2 {
+  position: absolute;
+  width: 2.34375vw;
+  height: 2.6041666667vw;
+  top: 30.2083333333vw;
+  left: 42.1875vw;
+}
+
+.header-404__Vec3 {
+  position: absolute;
+  width: 2.6041666667vw;
+  height: 2.8645833333vw;
+  top: 2.6041666667vw;
+  left: 93.75vw;
+}
+
+.header-404__Vec4 {
+  position: absolute;
+  width: 4.1666666667vw;
+  height: 4.6875vw;
+  top: 31.25vw;
+  left: 9.8958333333vw;
+}
+
+.header-404__text {
+  font-family: "Raleway-Bold";
   font-weight: 700;
   font-size: 13.0208333333vw;
+  line-height: 13.0208333333vw;
   color: transparent;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px var(--color-light);
 }
 
-.header__text-small {
-  font-family: var(--font-family);
+.header-404__text-small {
+  font-family: "Raleway-Thin";
   font-weight: 100;
   font-size: 5vw;
+  line-height: 5vw;
+  margin-top: 30px;
 }
 
-.header::after {
+.header-404::after {
   content: "";
   background-image: url(/images/404/1920.png);
-  position: absolute;
   background-size: cover;
   display: inline-block;
   width: 44.7916666667vw;
-  height: 34.21875vw;
-  margin-left: 300px;
+  height: 34.375vw;
+  position: absolute;
+  top: -7.8125vw;
+  left: 44.7916666667vw;
+}
+
+.header-404-main-link {
+  text-decoration: none;
+  color: var(--color-light);
+  font-family: "Raleway-Regular";
+  font-weight: 400;
+  font-size: 0.9375vw;
+  line-height: 0.9375vw;
+  background-color: var(--color-red);
+  display: flex;
+  width: 18.2291666667vw;
+  height: 3.125vw;
+  border-radius: var(--border-radius);
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  animation-name: button-pulse-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.header-404-main-link::before {
+  content: "";
+  position: absolute;
+  width: 18.2291666667vw;
+  height: 3.125vw;
+}
+
+@media screen and (max-width: 960px) {
+  .header-404__circle1 {
+    top: -214.2857142857vw;
+    left: -285.7142857143vw;
+  }
+  .header-404__circle2 {
+    left: 238.0952380952vw;
+  }
+  .header-404__circle3 {
+    top: 214.2857142857vw;
+    left: 714.2857142857vw;
+  }
+  .header-404 {
+    margin-left: 19.0476190476vw;
+    margin-top: 66.6666666667vw;
+  }
+  .header-404__Vec1 {
+    width: 33.3333333333vw;
+    height: 35.7142857143vw;
+    top: -23.8095238095vw;
+    left: 76.1904761905vw;
+  }
+  .header-404__Vec2 {
+    width: 21.4285714286vw;
+    height: 23.8095238095vw;
+    top: 276.1904761905vw;
+    left: 385.7142857143vw;
+  }
+  .header-404__Vec3 {
+    width: 23.8095238095vw;
+    height: 26.1904761905vw;
+    top: 23.8095238095vw;
+    left: 857.1428571429vw;
+  }
+  .header-404__Vec4 {
+    width: 38.0952380952vw;
+    height: 42.8571428571vw;
+    top: 285.7142857143vw;
+    left: 90.4761904762vw;
+  }
+  .header-404__text {
+    font-size: 119.0476190476vw;
+    line-height: 119.0476190476vw;
+  }
+  .header-404__text-small {
+    font-size: 45.7142857143vw;
+    line-height: 45.7142857143vw;
+  }
+  .header-404::after {
+    background-repeat: no-repeat;
+    width: 259.5238095238vw;
+    height: 314.2857142857vw;
+    top: -33.3333333333vw;
+    left: 71.4285714286vw;
+  }
+  .header-404-main-link {
+    font-size: 8.5714285714vw;
+    line-height: 8.5714285714vw;
+    width: 166.6666666667vw;
+    height: 28.5714285714vw;
+  }
+  .header-404-main-link::before {
+    width: 166.6666666667vw;
+    height: 28.5714285714vw;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

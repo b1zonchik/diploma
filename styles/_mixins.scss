@@ -1,24 +1,10 @@
 @import url('/styles/_variables.scss');
 
-@mixin fluid-text($max:18, $min:14, $container-width:var(--conteiner-big)){
-    font-size: clamp(#{min}px, calc($max / $container-width * 100vw), #{$max}px);
+@mixin circle-blur{
+    background-color: var(--color-red);
+    background-size: 413px 413px;
+    border-radius: calc(413px / 2);
+    filter: blur(200px);
+    opacity: 50%;
 }
 
-@mixin reset-link{
-    color: inherit;
-
-    &, &:hover{
-        text-decoration: none;
-    }
-}
-
-@mixin reset-button{
-    padding: 0;
-    background-color: transparent;
-    border: none;
-}
-
-@mixin square($size){
-    width: $size;
-    aspect-ratio: 1;
-}
