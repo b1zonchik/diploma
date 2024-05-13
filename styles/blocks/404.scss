@@ -1,0 +1,40 @@
+@import url('/styles/_variables.scss');
+@import url('/styles/_fonts.scss');
+
+body{
+    background-color: var(--color-blue);
+    outline: 4px solid green !important;
+    display: flex;
+    flex-direction: row;
+}
+
+.header{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.header__text{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: calc(250 / 1920 * 100vw);
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--color-light);
+}
+
+.header__text-small{
+    font-family: var(--font-family);
+    font-weight: 100;
+    font-size: calc(96 / 1920 * 100vw);
+}
+
+.header::after{
+    content: '';
+    background-image: url(/images/404/1920.png);
+    position: absolute;
+    background-size: cover;
+    display: inline-block;
+    width: calc(860 / 1920 * 100vw);
+    height: calc(657 / 1920 * 100vw);
+    margin-left: 300px;
+}
