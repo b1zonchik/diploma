@@ -1,11 +1,11 @@
 /**
 * Modern CSS Reset Tweaks
 * ================================================== */
-@import url("/styles/_variables.scss");
-@import url("/styles/_variables.scss");
-@import url("/styles/_variables.scss");
-@import url("/styles/_fonts.scss");
-@import url("/styles/_mixins.scss");
+@import url("styles/_variables.scss");
+@import url("styles/_variables.scss");
+@import url("styles/_variables.scss");
+@import url("styles/_fonts.scss");
+@import url("styles/_mixins.scss");
 html {
   -webkit-text-size-adjust: 100%;
 }
@@ -757,7 +757,7 @@ body, p {
 
 .header-404::after {
   content: "";
-  background-image: url(/images/404/1920.png);
+  background-image: url(images/404/1920.png);
   background-size: cover;
   display: inline-block;
   width: 44.7916666667vw;

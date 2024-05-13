@@ -1,6 +1,6 @@
-@import url('/styles/_variables.scss');
-@import url('/styles/_fonts.scss');
-@import url('/styles/_mixins.scss');
+@import url('styles/_variables.scss');
+@import url('styles/_fonts.scss');
+@import url('styles/_mixins.scss');
 
 @keyframes button-pulse-animation{
     0%{
@@ -105,7 +105,8 @@ $block-width: 1920;
 
 .header-404::after{
     content: '';
-    background-image: url(/images/404/1920.png);
+    background-image: url(
+        images/404/1920.png);
     background-size: cover;
     display: inline-block;
     width: calc(860 / $block-width * 100vw);
