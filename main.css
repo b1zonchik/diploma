@@ -3,9 +3,9 @@
 * ================================================== */
 @import url("styles/_variables.scss");
 @import url("styles/_variables.scss");
-@import url("styles/_variables.scss");
-@import url("styles/_fonts.scss");
-@import url("styles/_mixins.scss");
+@import url("../_variables.scss");
+@import url("../_fonts.scss");
+@import url("../_mixins.scss");
 html {
   -webkit-text-size-adjust: 100%;
 }
