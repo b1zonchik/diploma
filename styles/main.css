@@ -1,12 +1,12 @@
 /**
 * Modern CSS Reset Tweaks
 * ================================================== */
-@import url("_variables.scss");
-@import url("_variables.scss");
-@import url("_variables.scss");
-@import url("_variables.scss");
-@import url("_fonts.scss");
-@import url("_mixins.scss");
+@import url("variables.scss");
+@import url("variables.scss");
+@import url("variables.scss");
+@import url("variables.scss");
+@import url("fonts.scss");
+@import url("mixins.scss");
 html {
   -webkit-text-size-adjust: 100%;
 }
