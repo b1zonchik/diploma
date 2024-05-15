@@ -105,7 +105,7 @@ $block-width: 1920;
 
 .header-404::after{
     content: '';
-    background-image: url("/images/404/1920.png");
+    background-image: url("images/404/1920.png");
     background-size: cover;
     display: inline-block;
     width: calc(860 / $block-width * 100vw);
