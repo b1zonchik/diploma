@@ -744,7 +744,7 @@ body, p {
 
 .header-404::after {
   content: "";
-  background-image: url("/images/404/1920.png");
+  background-image: url("images/404/1920.png");
   background-size: cover;
   display: inline-block;
   width: 44.7916666667vw;
