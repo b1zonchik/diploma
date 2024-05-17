@@ -151,93 +151,6 @@ $block-width: 1920;
     }
 }
 
-// ------------------------------------------------------------------------------------------------------------------
-
-@media  screen and (max-width: 1700px) {
-    $block-width: 1500;
-
-    .header-404__circle1{
-        top: calc(-450 / $block-width * 100vw);
-        left: calc(-600 /$block-width * 100vw);
-    }
-    
-    .header-404__circle2{
-        left: calc(500 / $block-width * 100vw);
-    }
-    
-    .header-404__circle3{
-        top: calc(450 / $block-width * 100vw);
-        left: calc(1500 / $block-width * 100vw);
-    }
-    
-    .header-404{
-        margin-left: calc(400 / $block-width * 100vw);
-        margin-top: calc(200 / $block-width * 100vw);
-    }
-    
-    .header-404__Vec1{
-        position: absolute;
-        width: calc(70 / $block-width * 100vw);
-        height: calc(75 / $block-width * 100vw);
-        top: calc(-50 / $block-width * 100vw);
-        left: calc(160 / $block-width * 100vw);
-    }
-    
-    .header-404__Vec2{
-        position: absolute;
-        width: calc(45 / $block-width * 100vw);
-        height: calc(50 / $block-width * 100vw);
-        top: calc(580 / $block-width * 100vw);
-        left: calc(810 / $block-width * 100vw);
-    }
-    
-    .header-404__Vec3{
-        position: absolute;
-        width: calc(50 / $block-width * 100vw);
-        height: calc(55 / $block-width * 100vw);
-        top: calc(50 / $block-width * 100vw);
-        left: calc(1800 / $block-width * 100vw);
-    }
-    
-    .header-404__Vec4{
-        position: absolute;
-        width: calc(80 / $block-width * 100vw);
-        height: calc(90 / $block-width * 100vw);
-        top: calc(600 / $block-width * 100vw);
-        left: calc(190 / $block-width * 100vw);
-    }
-    
-    .header-404__text{
-        font-size: calc(250 / $block-width * 100vw);
-        line-height: calc(250 / $block-width * 100vw);
-    }
-    
-    .header-404__text-small{
-        font-size: calc(96 / $block-width * 100vw);
-        line-height: calc(96 / $block-width * 100vw);
-    }
-    
-    .header-404::after{
-        content: '';
-        width: calc(860 / $block-width * 100vw);
-        height: calc(660 / $block-width * 100vw);
-        top: calc(-150 / $block-width * 100vw);
-        left: calc(860 / $block-width * 100vw);
-    }
-    
-    .header-404-main-link{
-        font-size: calc(18 / $block-width * 100vw);
-        line-height: calc(18 / $block-width * 100vw);
-        width: calc(350 / $block-width * 100vw);
-        height: calc(60 / $block-width * 100vw);
-    }
-    
-    .header-404-main-link::before{
-        width: calc(350 / $block-width * 100vw);
-        height: calc(60 / $block-width * 100vw);
-    }
-    
-}
 
 // ------------------------------------------------------------------------------------------------------------------
 
@@ -245,23 +158,17 @@ $block-width: 1920;
     $block-width: 900;
 
     .header-404__circle1{
-        width: 413px;
-        aspect-ratio: 1;
         @include circle-blur(300px, 100%);
         top: calc(-450 / $block-width * 100vw);
         left: calc(-600 /$block-width * 100vw);
     }
     
     .header-404__circle2{
-        width: 413px;
-        aspect-ratio: 1;
         @include circle-blur(300px, 100%);
         left: calc(500 / $block-width * 100vw);
     }
     
     .header-404__circle3{
-        width: 413px;
-        aspect-ratio: 1;
         @include circle-blur(300px, 100%);
         top: calc(450 / $block-width * 100vw);
         left: calc(1500 / $block-width * 100vw);
@@ -343,17 +250,19 @@ $block-width: 1920;
     $block-width: 250;
 
     .header-404__circle1{
-        top: calc(-450 / $block-width * 100vw);
-        left: calc(-600 / $block-width * 100vw);
+        @include circle-blur(300px, 120%);
+        top: calc(-200 / $block-width * 100vw);
+        left: calc(-50 / $block-width * 100vw);
     }
     
     .header-404__circle2{
-        left: calc(500 / $block-width * 100vw);
+        @include circle-blur(300px, 120%);
+        top: calc(200 / $block-width * 100vw);
+        left: calc(400 / $block-width * 100vw);
     }
     
     .header-404__circle3{
-        top: calc(450 / $block-width * 100vw);
-        left: calc(1500 / $block-width * 100vw);
+        @include visually-hidden();
     }
     
     .header-404{
@@ -395,6 +304,7 @@ $block-width: 1920;
     .header-404__text-small{
         font-size: calc(96 / $block-width * 100vw);
         line-height: calc(96 / $block-width * 100vw);
+        margin-top: 100px;
     }
     
     .header-404::after{
@@ -410,6 +320,7 @@ $block-width: 1920;
         line-height: calc(18 / $block-width * 100vw);
         width: calc(350 / $block-width * 100vw);
         height: calc(60 / $block-width * 100vw);
+        margin-top: 200px;
     }
     
     .header-404-main-link::before{
