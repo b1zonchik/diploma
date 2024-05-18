@@ -6,11 +6,50 @@ $block-width: 1920;
 
 body{
     background-color: var(--color-blue);
-    color: var(--color-light);
+    height: 1000px;
 }
 
-.header{
+.header__menu{
     font-family: "Raleway-Regular";
     font-size: 18px;
     line-height: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    width: 100%;
+}
+
+.header__menu-burger{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu-link{
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+.header__nav-1300{
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .header__nav-1300{
+        visibility: visible;
+        order: 50;
+    }
+
+    .header__menu-burger{
+        order: 100;
+        flex-direction: column;
+        visibility: hidden;
+    }
+
+    .header__nav-1300:checked ~ ul{
+        visibility: visible;
+    }
 }
