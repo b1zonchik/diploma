@@ -365,10 +365,7 @@ $block-width: 1920;
     }
     
     .header-404__Vec2{
-        width: calc(45 / $block-width * 100vw);
-        height: calc(50 / $block-width * 100vw);
-        top: calc(580 / $block-width * 100vw);
-        left: calc(810 / $block-width * 100vw);
+        @include visually-hidden();
     }
     
     .header-404__Vec3{
@@ -396,7 +393,7 @@ $block-width: 1920;
     
     .header-404::after{
         background-repeat: no-repeat;
-        width: calc(310 / $block-width * 100vw);
+        width: calc(290 / $block-width * 100vw);
         height: calc(660 / $block-width * 100vw);
         top: calc(-80 / $block-width * 100vw);
         left: calc(350 / $block-width * 100vw);
@@ -431,7 +428,7 @@ $block-width: 1920;
     .header-404__circle2{
         @include circle-blur(300px, 120%);
         top: calc(200 / $block-width * 100vw);
-        left: calc(400 / $block-width * 100vw);
+        left: calc(300 / $block-width * 100vw);
     }
     
     .header-404__circle3{
@@ -452,10 +449,7 @@ $block-width: 1920;
     }
     
     .header-404__Vec2{
-        width: calc(45 / $block-width * 100vw);
-        height: calc(50 / $block-width * 100vw);
-        top: calc(580 / $block-width * 100vw);
-        left: calc(810 / $block-width * 100vw);
+        @include visually-hidden();
     }
     
     .header-404__Vec3{
@@ -482,13 +476,13 @@ $block-width: 1920;
     }
     
     .header-404::after{
+        background-image: url("images/404/1920-rotate.png");
         background-repeat: no-repeat;
-        width: calc(700 / $block-width * 100vw);
+        width: calc(480 / $block-width * 100vw);
         height: calc(600 / $block-width * 100vw);
         position: absolute;
         top: calc(550 / $block-width * 100vw);
-        left: calc(20 / $block-width * 100vw);
-        transform: rotate(15deg);
+        left: calc(-10 / $block-width * 100vw);
     }
     
     .header-404-main-link{

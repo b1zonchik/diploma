@@ -6,6 +6,9 @@
 @import url("variables.scss");
 @import url("fonts.scss");
 @import url("mixins.scss");
+@import url("variables.scss");
+@import url("fonts.scss");
+@import url("mixins.scss");
 html {
   -webkit-text-size-adjust: 100%;
 }
@@ -988,10 +991,16 @@ template {
     left: 100vw;
   }
   .header-404__Vec2 {
-    width: 28.125vw;
-    height: 31.25vw;
-    top: 362.5vw;
-    left: 506.25vw;
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
   }
   .header-404__Vec3 {
     position: absolute !important;
@@ -1023,7 +1032,7 @@ template {
   }
   .header-404::after {
     background-repeat: no-repeat;
-    width: 193.75vw;
+    width: 181.25vw;
     height: 412.5vw;
     top: -50vw;
     left: 218.75vw;
@@ -1058,7 +1067,7 @@ template {
     filter: blur(300px);
     opacity: 120%;
     top: 166.6666666667vw;
-    left: 333.3333333333vw;
+    left: 250vw;
   }
   .header-404__circle3 {
     position: absolute !important;
@@ -1084,10 +1093,16 @@ template {
     left: 133.3333333333vw;
   }
   .header-404__Vec2 {
-    width: 37.5vw;
-    height: 41.6666666667vw;
-    top: 483.3333333333vw;
-    left: 675vw;
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
   }
   .header-404__Vec3 {
     position: absolute !important;
@@ -1118,13 +1133,13 @@ template {
     margin-top: 100px;
   }
   .header-404::after {
+    background-image: url("images/404/1920-rotate.png");
     background-repeat: no-repeat;
-    width: 583.3333333333vw;
+    width: 400vw;
     height: 500vw;
     position: absolute;
     top: 458.3333333333vw;
-    left: 16.6666666667vw;
-    transform: rotate(15deg);
+    left: -8.3333333333vw;
   }
   .header-404-main-link {
     font-size: 15vw;
@@ -1138,6 +1153,16 @@ template {
     width: 291.6666666667vw;
     height: 50vw;
   }
+}
+body {
+  background-color: var(--color-blue);
+  color: var(--color-light);
+}
+
+.header {
+  font-family: "Raleway-Regular";
+  font-size: 18px;
+  line-height: 18px;
 }
 
 /*# sourceMappingURL=main.css.map */

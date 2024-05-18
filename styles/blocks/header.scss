@@ -1,0 +1,16 @@
+@import url('variables.scss');
+@import url('fonts.scss');
+@import url('mixins.scss');
+
+$block-width: 1920;
+
+body{
+    background-color: var(--color-blue);
+    color: var(--color-light);
+}
+
+.header{
+    font-family: "Raleway-Regular";
+    font-size: 18px;
+    line-height: 18px;
+}
